@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project -2 </title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <style type="text/tailwindcss">
+    /*  Custom Colors */
+    @theme {
+      --color-primary-gray: #353749;
+      --color-primary-blue: #0c1634;
+      --color-secondary-blue: #193071;
+      --color-secondary-gray: #b1b2b9;
+      --color-light-blue: #3990a9;
+      --color-primary-red: #CC1609;
+      --color-secondary-red: #CB5549;
+      --color-primary-cyan: #968B7C;
+      --color-secondary-white: #F9F9F9;
+    }
+
+    /*  Custom Components */
+    @layer components {
+        .container{
+            @apply px-[2rem] ;
+        }
+      .btn {
+        @apply text-xl px-6 py-3 text-primary-red font-semibold border border-2 border-primary-red bg-transparent rounded-lg hover:bg-primary-red hover:text-white  transition duration-500 ease-in  ;
+      }
+      
+      .card {
+        @apply p-6 bg-secondary-white shadow-lg rounded-xl;
+      }
+    }
+  </style>
+</head>
+<body>
+    <!-- nav section start -->
+     <nav class="   h-auto w-full ">
+        <div class="container flex  items-center justify-between py-6 bg-white">
+            <div class="flex gap-2 items-center text-primary-red">
+                <img src="assets/logo.png" alt="" class="h-10 w-10 object-cover rounded-[10px]">
+                <a href="" class="text-2xl font-semibold  hover:text-white  transition duration-500 ease-in  tracking-[0.6px]">FileWisely</a>
+            </div>
+            <ul class=" flex gap-4 text-xl font-[600] text-primary-red">
+                <li><a href="">About</a></li>
+                <li><a href="">How it works</a></li>
+                <li><a href="">Testimonial</a></li>
+            </ul>
+            <div class=" flex gap-4">
+                <button class="btn">Register</button>
+                <button class="btn">Sign in</button>
+            </div>
+            
+        </div>
+     </nav>
+         <!-- nav section end -->
+
+    <!-- hero section start -->
+
+     <section style="background: url(./assets/hero-img.png); background-size: cover; background-position: center;" class="  w-full h-[800px]">
+        <div class="container flex flex-col items-start gap-y-12 pt-[60px] w-[50%] ">
+            <div class="">
+                <h1 class="text-[80px] leading-[85px] font-semibold">Whoo Whoo here and we are ready</h1>
+                <p class="text-primary-cyan text-[22px] my-5">Al-powered help for claims, policy storage, and disaster readiness all in one secure vault.</p>
+                <button class="btn text-[24px]">Get Early Access</button>
+            </div>
+            
+        </div>
+     </section>
+    <!-- hero section end -->
+    <!-- propetion section start -->
+     <section class="w-[100%] py-[50px]">
+      <div class="container">
+        <div class="text-center space-y-4">
+          <h1 class="text-4xl text-primary-red font-bold">Value Proposition</h1>
+          <p class="text-lg text-primary-cyan">Be prepared, stay organized, and make smarter <br> decisions all in one secure platform.</p>
+        </div>
+        <div class="grid grid-cols-3 gap-10 mt-24">
+          <div class="bg-secondary-white p-10 flex gap-4 flex-col">
+            <img src="./assets/owl.svg" alt="" class="h-12 w-12">
+            <h1 class="text-3xl font-semibold">Stay Ahead of Surprises</h1>
+            <p class="text-primary-cyan text-xl">Prepare for the unexpected
+              with a tool that keeps you protected.</p>
+          </div>
+          <div class="bg-secondary-white p-10 flex gap-4 flex-col">
+            <img src="./assets/owl.svg" alt="" class="h-12 w-12">
+            <h1 class="text-3xl font-semibold">Keep Everything Organized</h1>
+            <p class="text-primary-cyan text-xl">Securely store policies
+            and critical info in one place.</p>
+          </div>
+          <div class="bg-secondary-white p-10 flex gap-4 flex-col">
+            <img src="./assets/owl.svg" alt="" class="h-12 w-12">
+            <h1 class="text-3xl font-semibold">Gain the Upper Hand</h1>
+            <p class="text-primary-cyan text-xl">Get insights that help you make smarter insurance decisions.</p>
+          </div>
+          
+        </div>
+      </div>
+     </section>
+    <!-- propetion section end -->
+    <!-- works section start -->
+     <section class="">
+      <div class="container flex justify-center gap-y-8">
+        <div class="w-[55%] flex flex-col px-6 gap-y-4 gap-x-6">
+          <div class="flex p-5 bg-primary-red rounded-xl items-center ">
+            <img src="./assets/icon1.jpg" alt="" class="w-20 h-20">
+            <div class="flex flex-col px-5
+            gap-y-3">
+              <h3 class="text-2xl text-secondary-white">Protect</h3>
+              <p class="text-lg text-secondary-white">Safeguard your documents and photos in abr <br> private, encrypted vault.</p>
+            </div>
+          </div>
+          <div class="flex p-5 bg-primary-red rounded-xl items-center ">
+            <img src="./assets/icon1.jpg" alt="" class="w-20 h-20">
+            <div class="flex flex-col px-5
+            gap-y-3">
+              <h3 class="text-2xl text-secondary-white">Protect</h3>
+              <p class="text-lg text-secondary-white">Safeguard your documents and photos in abr <br> private, encrypted vault.</p>
+            </div>
+          </div>
+          <div class="flex p-5 bg-primary-red rounded-xl items-center ">
+            <img src="./assets/icon1.jpg" alt="" class="w-20 h-20">
+            <div class="flex flex-col px-5
+            gap-y-3">
+              <h3 class="text-2xl text-secondary-white">Protect</h3>
+              <p class="text-lg text-secondary-white">Safeguard your documents and photos in abr <br> private, encrypted vault.</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-[55%]">
+          <div class=" p-5">
+                <h1 class="text-[35px] leading-[45px] font-semibold text-primary-red">How It Works</h1>
+                <p class="text-primary-cyan text-[20px] my-6">Protect. Prepare. File.
+Instead of detailing <br> features, keep it to outcomes.</p>
+                <button class="btn text-[20px]">Join Waitlist</button>
+            </div>
+        </div>
+      </div>
+     </section>
+    <!-- works section end -->
+    <!-- Clients section start -->
+     <section class=" mt-[80px]">
+      <div class="container flex flex-col gap-y-14">
+        <h1 class="text-center text-4xl text-primary-red font-semibold ">Hear From Our Happy Clients</h1>
+        <div class="flex items-center gap-x-8  ">
+          <div class="flex flex-col gap-y-8 bg-secondary-white p-8 w-[50%] rounded-xl">
+            <div class=" ">
+              <img src="./assets/IMG-20250927-WA0001.jpg" alt="">
+              <p class="text-black text-xl font-semibold">"Finally, an app that makes you feel in control instead <br> of at the mercy of the system. "</p>
+            </div>
+            <div class=" flex justify-between items-center">
+              <h4>Sarah & Michael Stone</h4>
+              <h4>Director</h4>
+            </div>
+          </div>
+          <div class="flex flex-col gap-y-8 bg-secondary-white p-8 w-[50%] rounded-xl">
+            <div class=" ">
+              <img src="./assets/IMG-20250927-WA0001.jpg" alt="">
+              <p class="text-black text-xl font-semibold">"Finally, an app that makes you feel in control instead <br> of at the mercy of the system. "</p>
+            </div>
+            <div class=" flex justify-between items-center">
+              <h4>Sarah & Michael Stone</h4>
+              <h4>Director</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- Clients section end -->
+     <section class="w-[100%] py-[60px]">
+      <div class="container flex ">
+        <div class="w-[70%] p-16 flex flex-col gap-y-8">
+          <h1 class="text-5xl font-semibold text-primary-red ">Built with privacy in mind. Designed <br> to give you control. </h1>
+          <p class="text-primary-cyan text-xl">FileWisely gives policyholders the tools to <br> take control from disaster prep to claims success.</p>
+        </div>
+        <div class="w-[30%] flex items-center justify-center">
+          <img src="./assets/IMG-20250927-WA0004.jpg" alt="">
+        </div>
+      </div>
+     </section>
+     <section class="w-[100%] py-[60px] bg-[#F9F1E6]">
+      <div class="container flex ">
+        <div class="w-[30%] flex items-center justify-center">
+          <img src="./assets/IMG-20250927-WA0004.jpg" alt="">
+        </div>
+        <div class="w-[70%] p-16 flex flex-col gap-y-8 justify-center">
+          <div class=" ">
+                <h1 class="text-5xl text-primary-red leading-[45px] font-semibold">Feel more prepared?</h1>
+                <p class="text-primary-cyan text-[20px] my-6">Help others feel the same. Be one of the first to experience <br> the future of insurance readiness.</p>
+                <button class="btn text-[20px]">Join Waitlist</button>
+            </div>
+        </div>
+      </div>
+     </section>
+     <section class="w-[100%]">
+      <div class="text-center w-full bg-primary-red py-3 ">
+        <h4 class="text-secondary-white text-sm opacity-45">2025 File wisely. All reserved.</h4>
+      </div>
+     </section>
+
+</body>
+</html>
